@@ -12,6 +12,8 @@ import Typography from '@mui/material/Typography';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import { DISABLED_COLOR } from '../colors';
+import { background } from '../commonStyles';
 import { logoutUser, selectCurrentUser } from '../store/reducers/userSlice';
 import classes from './MainNavigation.module.css';
 
@@ -45,7 +47,7 @@ const MainNavigation = () => {
   return (
     <AppBar position="static" style={{ background: 'transparent' }}>
       <Container maxWidth={false} sx={{ padding: 0 }} disableGutters>
-        <Toolbar className={classes.tool}>
+        <Toolbar className={classes.toolbar}>
           <NavLink className={classes.menu} to="/">
             <AutoStoriesIcon
               sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}
@@ -64,12 +66,10 @@ const MainNavigation = () => {
               <MenuIcon />
             </IconButton>
             <Menu
-              classes={{ paper: classes.menuPaper }}
               sx={{
                 '.MuiPaper-root': {
-                  backgroundColor: 'rgb(51, 56, 77, 0.8)',
+                  ...background,
                 },
-                display: { xs: 'block', md: 'none' },
               }}
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -134,7 +134,7 @@ const MainNavigation = () => {
               borderColor: 'white',
               color: 'black',
               '&:hover': {
-                border: 'none',
+                border: '1px solid' + DISABLED_COLOR,
               },
             }}
             onClick={handleLogout}

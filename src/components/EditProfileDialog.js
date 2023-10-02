@@ -11,6 +11,7 @@ import {
 } from '@mui/joy';
 import { InputLabel } from '@mui/material';
 import React, { useEffect, useState } from 'react';
+import { BLACK_BUTTON, LIGHT_BUTTON } from '../colors';
 import { whiteText } from '../commonStyles';
 
 export default function EditProfileDialog({
@@ -80,11 +81,11 @@ export default function EditProfileDialog({
 
           <Button
             sx={{
-              backgroundColor: 'black',
+              backgroundColor: BLACK_BUTTON,
               ...whiteText,
               ':hover': {
                 color: 'black',
-                backgroundColor: '#DDE7EE',
+                backgroundColor: LIGHT_BUTTON,
               },
             }}
             variant="soft"

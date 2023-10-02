@@ -55,7 +55,7 @@ const BooksList = ({
         padding={2}
         sx={{
           '.MuiTablePagination-root': {
-            border: '0 !important',
+            border: '0',
             ...whiteText,
           },
           '.MuiSvgIcon-root': {

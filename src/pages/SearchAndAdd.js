@@ -3,7 +3,7 @@ import { Box, Button, CircularProgress } from '@mui/joy';
 import { InputAdornment, TextField } from '@mui/material';
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import { stylesForInput } from '../commonStyles';
+import { alignCenter, stylesForInput } from '../commonStyles';
 import ResultPage from '../components/ResultPage';
 import { fetchBooks } from '../services/books.service';
 import { selectIsLoading } from '../store/reducers/loaderSlice';
@@ -48,14 +48,7 @@ const SearchAndAddPage = () => {
   };
 
   return isLoading ? (
-    <Box
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100%',
-      }}
-    >
+    <Box sx={alignCenter}>
       <CircularProgress
         color="neutral"
         variant="soft"

@@ -1,3 +1,5 @@
+import { BACKGROUND_COLOR, BORDER_COLOR, DISABLED_COLOR } from './colors';
+
 export const bookmarkIcon = {
   position: 'absolute',
   top: '0.875rem',
@@ -41,24 +43,38 @@ export const alignCenter = {
 export const stylesForInput = {
   '& .MuiOutlinedInput-root': {
     '& fieldset': {
-      borderColor: '#626b74',
+      borderColor: BORDER_COLOR,
     },
     '&:hover fieldset': {
-      borderColor: '#626b74',
+      borderColor: BORDER_COLOR,
     },
     '&.Mui-focused fieldset': {
-      borderColor: '#626b74',
+      borderColor: BORDER_COLOR,
     },
   },
   '& .MuiOutlinedInput-input': {
     ...whiteText,
   },
   '& .MuiInputLabel-root': {
-    ...whiteText,
+    color: '#d0d0d0',
+    '&.Mui-focused': {
+      ...whiteText,
+    },
   },
   '& .MuiInputAdornment-root': {
     '& .MuiSvgIcon-root': {
       ...whiteText,
     },
   },
+};
+
+export const background = {
+  backgroundColor: BACKGROUND_COLOR,
+};
+
+export const disabledMenu = {
+  display: 'flex',
+  gap: '1rem',
+  textDecoration: 'none',
+  color: DISABLED_COLOR,
 };

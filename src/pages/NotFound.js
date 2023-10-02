@@ -1,16 +1,13 @@
 import { Box, Typography } from '@mui/joy';
 import React from 'react';
-import { whiteText } from '../commonStyles';
+import { alignCenter, whiteText } from '../commonStyles';
 
 const NotFoundPage = () => {
   return (
     <Box
       sx={{
-        display: 'flex',
+        ...alignCenter,
         flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '100vh',
         backgroundColor: 'background.default',
       }}
     >

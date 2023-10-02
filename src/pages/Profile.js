@@ -57,9 +57,7 @@ const ProfilePage = () => {
         <Button
           sx={{
             margin: 'auto auto 3rem auto',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
+            ...alignCenter,
           }}
           onClick={() => setIsDialogOpen(true)}
           size="lg"

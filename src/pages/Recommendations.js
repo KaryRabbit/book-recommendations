@@ -167,14 +167,7 @@ const RecommendationsPage = () => {
     );
   }
   return isLoading ? (
-    <Box
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100%',
-      }}
-    >
+    <Box sx={alignCenter}>
       <CircularProgress
         color="neutral"
         variant="soft"
