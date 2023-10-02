@@ -8,10 +8,10 @@ Check out the demo [here](https://KaryRabbit.github.io/book-recommendations).
 
 ## 📌 Features
 
-- **User Authentication:** Secure login to personalize your experience.
+- **User Authentication:** Login to personalize your experience.
 - **Book Search:** Easily find and add books to your personal library.
-- **Personalized Recommendations:** Get book recommendations tailored just for you.
-- **Profile Management:** Manage your profile settings with ease.
+- **Personalized Recommendations:** Get book recommendations.
+- **Profile Management:** Manage your profile settings.
 
 ## 📖 Table of Contents
 
