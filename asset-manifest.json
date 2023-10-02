@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/KaryRabbit/book-recommendations/static/css/main.c2ce4814.css",
+    "main.js": "/KaryRabbit/book-recommendations/static/js/main.96448fc2.js",
+    "static/media/books.jpg": "/KaryRabbit/book-recommendations/static/media/books.b067f46acc7bc835bffe.jpg",
+    "index.html": "/KaryRabbit/book-recommendations/index.html",
+    "main.c2ce4814.css.map": "/KaryRabbit/book-recommendations/static/css/main.c2ce4814.css.map",
+    "main.96448fc2.js.map": "/KaryRabbit/book-recommendations/static/js/main.96448fc2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2ce4814.css",
+    "static/js/main.96448fc2.js"
+  ]
+}
